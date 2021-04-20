@@ -267,12 +267,14 @@ class Entrega {
             if (prod.Codigo == codigo_producto)
             {
                 producto = prod;
+                producto.Stock += cantidad;
                 break;
             }
         }
         if (contador == catalogo.Total.Count && producto == null)
         {
             Console.WriteLine("No se ha encontrado el producto, ¿Desea cargarlo en el catalogo?\n");
+            Console.WriteLine("S- Si       N-No\n");
             seguir = false;
         }
 

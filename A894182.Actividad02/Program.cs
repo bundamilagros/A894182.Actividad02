@@ -81,7 +81,9 @@ o C) Al terminar, reporte el stock final de cada producto.
                                 producto.Stock = cantE;
                                 catalogo.Total.Add(producto);
                                 Console.WriteLine("Carga exitosa.\n");
+                                break;
                             }
+                            break;
                         }
                         opcion = MostrarMenu();
                         break;
